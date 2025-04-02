@@ -167,7 +167,7 @@ const Template3 = ({ imageUrl, text, storeName, roadName, weather, tag, weekday,
                     style={{
                         fontFamily: "Pretendard",
                         fontSize: `${96 * (431 / 1024)}px`,
-                        fontWeight: 60,
+                        fontWeight: 600,
                         lineHeight: "normal",
                         whiteSpace: "pre-line", 
                     }}>
