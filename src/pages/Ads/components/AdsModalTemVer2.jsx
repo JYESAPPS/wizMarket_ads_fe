@@ -728,7 +728,7 @@ const AdsModalTemVer2 = ({ isOpen, onClose, storeBusinessNumber }) => {
 
             // ✅ 1. 공유 데이터 임시 저장 (ads/temp/insert API 호출) - axios 사용
             const saveResponse = await axios.post(
-                `${process.env.REACT_APP_FASTAPI_ADS_URL}/ads/temp/insert`,
+                `${process.env.REACT_APP_FASTAPI_SEVER_URL}/ads/temp/insert`,
                 {
                     title: title || "기본 제목",
                     content: content || "기본 내용",

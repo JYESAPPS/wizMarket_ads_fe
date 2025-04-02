@@ -14,7 +14,7 @@ const AdsPromoteModal = () => {
         const fetchAdData = async () => {
             try {
                 const response = await axios.post(
-                    `${process.env.REACT_APP_FASTAPI_ADS_URL}/ads/temp/get`,
+                    `${process.env.REACT_APP_FASTAPI_SEVER_URL}/ads/temp/get`,
                     { share_id: uniqueId }, // ✅ POST 요청에서 JSON 바디로 전달
                     { headers: { "Content-Type": "application/json" } }
                 );
