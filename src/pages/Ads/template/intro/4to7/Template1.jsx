@@ -208,9 +208,8 @@ const Template1 = ({ imageUrl, text, storeName, roadName, isCaptured }) => {
                     contentEditable
                     suppressContentEditableWarning
                     onBlur={handleBlur}
-                    className={`editable-text blinking-cursor text-left break-keep relative ${
-                        isCaptured ? "no-blinking" : "" // ✅ 캡처 중이면 커서 숨김
-                    }`}
+                    className={`editable-text blinking-cursor text-left break-keep relative ${isCaptured ? "no-blinking" : "" // ✅ 캡처 중이면 커서 숨김
+                        }`}
                     style={{
                         color: "#656565",
                         fontFeatureSettings: "'case' on",
@@ -221,7 +220,7 @@ const Template1 = ({ imageUrl, text, storeName, roadName, isCaptured }) => {
                         lineHeight: `${66 * (431 / 1024)}px`,
                     }}
                     data-html2canvas-ignore={isCaptured ? "true" : "false"} // ✅ 캡처 중이면 커서 숨김
-                    >
+                >
                     {editText}
                 </p>
             </div>
@@ -232,25 +231,28 @@ const Template1 = ({ imageUrl, text, storeName, roadName, isCaptured }) => {
                         color: "#000",
                         fontFeatureSettings: "'case' on",
                         fontFamily: "Do Hyeon",
-                        fontSize: `${40 * (431 / 1024)}px`,
+                        fontSize: `${48 * (431 / 1024)}px`,
                         fontStyle: "normal",
                         fontWeight: 400,
                         lineHeight: `${42 * (431 / 1024)}px`,
                     }}>
                     {storeName}
                 </p>
-                <p className="text-white text-left overflow-hidden text-ellipsis"
+                <p
+                    className="text-left overflow-hidden text-ellipsis"
                     style={{
-                        color: "#000",
+                        color: "rgba(0, 0, 0, 0.70)",
                         fontFeatureSettings: "'case' on",
                         fontFamily: "Do Hyeon",
-                        fontSize: `${40 * (431 / 1024)}px`,
+                        fontSize: `${36 * (431 / 1024)}px`,
                         fontStyle: "normal",
                         fontWeight: 400,
                         lineHeight: `${42 * (431 / 1024)}px`,
-                    }}>
+                    }}
+                >
                     {roadName}
                 </p>
+
             </div>
 
 
